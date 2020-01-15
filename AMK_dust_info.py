@@ -89,7 +89,7 @@ def main():
             print('KWS Dectected ...\n Start STT...')
             text = gv2t.getVoice2Text()
             print('Recognized Text: '+ text)
-            if text.find("미세 먼지 알려줘") >= 0 or text.find("미세 먼지") >= 0 :
+            if text.find("미세먼지 알려줘") >= 0 or text.find("미세먼지") >= 0 or text.find("미세") >= 0 :
                 print("Command Detected")
                 find_state, find_city, find_state_status, find_city_status= findCity(text)
                 print(find_state_status,"/", find_city_status)
